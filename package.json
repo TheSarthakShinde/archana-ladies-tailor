@@ -1,0 +1,14 @@
+{
+  "name": "archana-ladies-tailor",
+  "version": "1.0.0",
+  "description": "Ladies Tailor website with React + Vite frontend and Node.js/MongoDB backend",
+  "scripts": {
+    "install:all": "cd frontend && npm install && cd ../backend && npm install",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

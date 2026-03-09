@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 50% 97%;
+    --foreground: 20 20% 18%;
+    --card: 30 40% 98%;
+    --card-foreground: 20 20% 18%;
+    --popover: 30 40% 98%;
+    --popover-foreground: 20 20% 18%;
+    --primary: 15 70% 65%;
+    --primary-foreground: 30 50% 98%;
+    --secondary: 270 40% 80%;
+    --secondary-foreground: 270 30% 25%;
+    --muted: 30 30% 93%;
+    --muted-foreground: 20 10% 45%;
+    --accent: 270 35% 85%;
+    --accent-foreground: 270 30% 25%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 30 25% 88%;
+    --input: 30 25% 88%;
+    --ring: 15 70% 65%;
+    --radius: 0.75rem;
+    --peach: 15 70% 65%;
+    --peach-light: 20 80% 92%;
+    --lavender: 270 40% 80%;
+    --lavender-light: 270 50% 93%;
+    --cream: 40 60% 95%;
+    --gold: 38 70% 55%;
+    --rose: 340 50% 65%;
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  body { @apply bg-background text-foreground antialiased; font-family: 'Lato', sans-serif; }
+  h1, h2, h3, h4, h5, h6 { font-family: 'Playfair Display', serif; }
+}
+
+@layer components {
+  .section-padding { @apply px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24; }
+
+  .gradient-peach {
+    background: linear-gradient(135deg, hsl(var(--peach-light)), hsl(var(--cream)));
+  }
+  .gradient-lavender {
+    background: linear-gradient(135deg, hsl(var(--lavender-light)), hsl(var(--cream)));
+  }
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(var(--peach)), hsl(var(--rose)));
+  }
+  .glass-card {
+    @apply backdrop-blur-md border border-border/50;
+    background: hsl(var(--card) / 0.8);
+  }
+}
+
+@layer utilities {
+  .hover-lift { @apply transition-all duration-300 ease-out; }
+  .hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px -8px hsl(var(--peach) / 0.25);
+  }
+}
