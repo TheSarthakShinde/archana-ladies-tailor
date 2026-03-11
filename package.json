@@ -4,9 +4,14 @@
   "description": "Ladies Tailor website with React + Vite frontend and Node.js/MongoDB backend",
   "scripts": {
     "install:all": "cd frontend && npm install && cd ../backend && npm install",
+
     "dev:frontend": "cd frontend && npm run dev",
     "dev:backend": "cd backend && npm run dev",
-    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\""
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
+
+    "build": "cd frontend && npm install && npm run build",
+
+    "start": "cd backend && node server.js"
   },
   "devDependencies": {
     "concurrently": "^8.2.2"

@@ -30,9 +30,9 @@ export default function Footer() {
           <div>
             <h4 className="font-display text-lg font-semibold mb-4">Contact</h4>
             <div className="space-y-3 text-sm opacity-70">
-              <div className="flex items-center gap-2"><Phone className="h-4 w-4 flex-shrink-0" /><span>+91 98765 43210</span></div>
-              <div className="flex items-center gap-2"><Mail className="h-4 w-4 flex-shrink-0" /><span>info@archanatailor.com</span></div>
-              <div className="flex items-start gap-2"><MapPin className="h-4 w-4 flex-shrink-0 mt-0.5" /><span>123 Fashion Street, Anna Nagar, Chennai</span></div>
+              <div className="flex items-center gap-2"><Phone className="h-4 w-4 flex-shrink-0" /><span>+91 9226173399</span></div>
+              <div className="flex items-center gap-2"><Mail className="h-4 w-4 flex-shrink-0" /><span>shinde7archana@gmail.com</span></div>
+              <div className="flex items-start gap-2"><MapPin className="h-4 w-4 flex-shrink-0 mt-0.5" /><span>Rupa Mangal Karyalaya Road, Mini Shopping Complex, Akluj, 413101</span></div>
             </div>
           </div>
 
